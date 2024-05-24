@@ -36,11 +36,11 @@
         <span class="star">&#9734;</span>
         <span class="star">&#9734;</span>
       </div>
-      <p><i>Haz clic en las estrellas para determinar tu evaluación.</i></p><br><br>
+      <p class="letras_blancas"><i>Haz clic en las estrellas para determinar tu evaluación.</i></p><br><br>
       <div class="explicacion" id="explicacion"><i class="fa-regular fa-pen-to-square fa"></i>&nbsp;&nbsp;&nbsp;¿Por qué le otorgaste esa
         valoración?</div>
       <textarea id="comment1" placeholder="Escribe tu respuesta aquí…" class="responder"></textarea>
-      <button onclick="goToPageIntermediate('intermediate1', 'item1')">Siguiente</button>
+      <div class="siguiente" id="siguiente" onclick="goToPageIntermediate('intermediate1', 'item1')">></div>
     </div>
 
     <!-- Página intermedia 1 -->
@@ -49,7 +49,7 @@
       <p style="color: white; font-size: 18px;">Evalúa el trabajo de Nayeli como directora con base en los siguientes
         criterios:</p><br><br>
       <div class="conte_imagenes" id="item1">
-        <div class="item" id="item1" onclick="goToPage('page2')">
+        <div class="item" id="item1" onclick="goToPage('page2', 'siguiente2', 'explicacion1', 'subtitulo1')">
           <img src="images/img_01_sm.png" alt="Imagen 1">
           <p class="texto_imagen">Rentabilidad</p>
         </div>
@@ -69,6 +69,7 @@
 
     <!-- Página 2 -->
     <div id="page2" class="pagina hidden">
+      <div class="subtitulo" id="subtitulo1">Rentabilidad</div>
       <h1 class="titulo">¿Qué tan buena es Nayeli creando riqueza a través de rentabilidad para la empresa?</h1>
       <div class="stars" data-page="2">
         <span class="star">&#9734;</span>
@@ -77,11 +78,11 @@
         <span class="star">&#9734;</span>
         <span class="star">&#9734;</span>
       </div>
-      <p><i>Haz clic en las estrellas para determinar tu evaluación.</i></p><br><br>
-      <div class="explicacion" id="explicacion"><i class="fa-regular fa-pen-to-square fa"></i>&nbsp;&nbsp;&nbsp;¿Por qué le otorgaste esa
+      <p class="letras_blancas"><i>Haz clic en las estrellas para determinar tu evaluación.</i></p><br><br>
+      <div class="explicacion" id="explicacion1"><i class="fa-regular fa-pen-to-square fa"></i>&nbsp;&nbsp;&nbsp;¿Por qué le otorgaste esa
         valoración?</div>
       <textarea id="comment2" placeholder="Escribe tu respuesta aquí…" class="responder"></textarea>
-      <button onclick="goToPageIntermediate('intermediate2', 'item2')">Siguiente</button>
+      <div class="siguiente" id="siguiente2" onclick="goToPageIntermediate('intermediate2', 'item2')">></div>
     </div>
 
     <!-- Página intermedia 2 -->
@@ -94,7 +95,7 @@
           <img src="images/img_01_select.png" alt="Imagen 1">
           <p class="texto_imagen">Rentabilidad</p>
         </div>
-        <div class="item" id="item2" onclick="goToPage('page3')">
+        <div class="item" id="item2" onclick="goToPage('page3', 'siguiente3', 'explicacion2', 'subtitulo2')">
           <img src="images/img_02_sm.png" alt="Imagen 2">
           <p class="texto_imagen">Competitividad</p>
         </div>
@@ -110,6 +111,7 @@
 
     <!-- Página 3 -->
     <div id="page3" class="pagina hidden">
+      <div class="subtitulo" id="subtitulo2">Competitividad</div>
       <h1 class="titulo">¿Qué tan buena es Nayeli generando diferenciadores para la empresa?</h1>
       <div class="stars" data-page="3">
         <span class="star">&#9734;</span>
@@ -118,11 +120,11 @@
         <span class="star">&#9734;</span>
         <span class="star">&#9734;</span>
       </div>
-      <p><i>Haz clic en las estrellas para determinar tu evaluación.</i></p><br><br>
-      <div class="explicacion" id="explicacion"><i class="fa-regular fa-pen-to-square fa"></i>&nbsp;&nbsp;&nbsp;¿Por qué le otorgaste esa
+      <p class="letras_blancas"><i>Haz clic en las estrellas para determinar tu evaluación.</i></p><br><br>
+      <div class="explicacion" id="explicacion2"><i class="fa-regular fa-pen-to-square fa"></i>&nbsp;&nbsp;&nbsp;¿Por qué le otorgaste esa
         valoración?</div>
       <textarea id="comment3" placeholder="Escribe tu respuesta aquí…" class="responder"></textarea>
-      <button onclick="goToPageIntermediate('intermediate3', 'item3')">Siguiente</button>
+      <div class="siguiente" id="siguiente3" onclick="goToPageIntermediate('intermediate3', 'item3')">></div>
     </div>
 
     <!-- Página intermedia 3 -->
@@ -139,7 +141,7 @@
           <img src="images/img_02_select.png" alt="Imagen 2">
           <p class="texto_imagen">Competitividad</p>
         </div>
-        <div class="item"  id="item3" onclick="goToPage('page4')">
+        <div class="item"  id="item3" onclick="goToPage('page4', 'siguiente4', 'explicacion3', 'subtitulo3')">
           <img src="images/img_03_sm.png" alt="Imagen 3">
           <p class="texto_imagen">Permanencia</p>
         </div>
@@ -151,6 +153,7 @@
 
     <!-- Página 4 -->
     <div id="page4" class="pagina hidden">
+      <div class="subtitulo" id="subtitulo3">Permanencia</div>
       <h1 class="titulo">¿Qué tan buena es Nayeli buscando innovar en su empresa?</h1>
       <div class="stars" data-page="4">
         <span class="star">&#9734;</span>
@@ -159,11 +162,11 @@
         <span class="star">&#9734;</span>
         <span class="star">&#9734;</span>
       </div>
-      <p><i>Haz clic en las estrellas para determinar tu evaluación.</i></p><br><br>
-      <div class="explicacion" id="explicacion"><i class="fa-regular fa-pen-to-square fa"></i>&nbsp;&nbsp;&nbsp;¿Por qué le otorgaste esa
+      <p class="letras_blancas"><i>Haz clic en las estrellas para determinar tu evaluación.</i></p><br><br>
+      <div class="explicacion" id="explicacion3"><i class="fa-regular fa-pen-to-square fa"></i>&nbsp;&nbsp;&nbsp;¿Por qué le otorgaste esa
         valoración?</div>
       <textarea id="comment4" placeholder="Escribe tu respuesta aquí…" class="responder"></textarea>
-      <button onclick="goToPageIntermediate('intermediate4', 'item4')">Siguiente</button>
+      <div class="siguiente" id="siguiente4" onclick="goToPageIntermediate('intermediate4', 'item4')">></div>
     </div>
 
 
@@ -185,7 +188,7 @@
             <img src="images/img_03_select.png" alt="Imagen 3">
             <p class="texto_imagen">Permanencia</p>
           </div>
-          <button style="position: absolute; top: 339px; left: 50;;" onclick="goToPageResults()">Siguiente</button>
+          <button class="siguientebtn" id="siguiente4" style="position: absolute; top: 339px; left: 50;;" onclick="goToPageResults()">></button>
         </div>
        
         <p style="color: white; font-size: 18px; text-align: center; width: 88%"><i>Haz clic sobre cada criterio para
@@ -197,7 +200,7 @@
     <div id="results" class="pagina hidden">
       <h1>Resultados</h1>
       <div id="resultList"></div>
-      <button id="finalBtn">Descargar resultados</button>
+      <button class="descargar" id="finalBtn">Descargar resultados</button>
     </div>
 
     <!-- Página Final -->
@@ -209,13 +212,25 @@
     <script>
       const ratings = [];
 
-      function goToPage(pageId) {
+      function goToPage(pageId,sigid,explicacionid,subtituloid) {
         document.querySelectorAll('div').forEach(div => {
           div.classList.add('hidden');
         });
         document.getElementById('bgcontenedor1').classList.remove('hidden');
         document.getElementById(pageId).classList.remove('hidden');
+        document.getElementById(explicacionid).classList.remove('hidden');
+        document.getElementById(sigid).classList.remove('hidden');
+        document.getElementById(subtituloid).classList.remove('hidden');
+        
+      }
+
+      function goToPage2(pageId) {
+        document.querySelectorAll('div').forEach(div => {
+          div.classList.add('hidden');
+        });
+        document.getElementById('bgcontenedor1').classList.remove('hidden');
         document.getElementById('explicacion').classList.remove('hidden');
+        document.getElementById(pageId).classList.remove('hidden');
       }
 
       function goToPageIntermediate(pageId, itemid) {
@@ -250,41 +265,71 @@
         });
       });
 
-      // Agrega los nombres de las secciones aquí
       const sectionNames = ['General', 'Rentabilidad', 'Competitividad', 'Permanencia'];
 
-      function goToPageResults() {
-        goToPage('results');
-        const resultList = document.getElementById('resultList');
-        resultList.innerHTML = '';
-        ratings.forEach((result, index) => {
-          const resultItem = document.createElement('div');
-          const rating = Array(result.rating).fill('&#9733;').join('') + Array(5 - result.rating).fill('&#9734;').join('');
-          const comment = document.getElementById(`comment${index + 1}`).value; // Obtener el valor del área de texto
-          resultItem.innerHTML = `
-      <h2>${sectionNames[index]}</h2>
-      <p>Rating: ${rating}</p>
-      <p>Comentario: ${comment}</p>
+function goToPageResults() {
+  goToPage2('results');
+  const resultList = document.getElementById('resultList');
+  resultList.innerHTML = '';
+  
+  const table = document.createElement('table');
+  table.innerHTML = `
+    <thead>
+      <tr>
+        <th>Sección</th>
+        <th>Rating</th>
+        <th>Comentario</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  `;
+  
+  const tbody = table.querySelector('tbody');
+
+  ratings.forEach((result, index) => {
+    const tr = document.createElement('tr');
+    
+    // Crear la representación de las estrellas
+    const rating = Array(result.rating).fill('&#9733;').join('') + Array(5 - result.rating).fill('&#9734;').join('');
+    
+    // Obtener el comentario del área de texto
+    const comment = document.getElementById(`comment${index + 1}`).value; 
+    
+    tr.innerHTML = `
+      <td>${sectionNames[index]}</td>
+      <td>${rating}</td>
+      <td>${comment}</td>
     `;
-          resultList.appendChild(resultItem);
-          resultList.classList.remove('hidden');
+    
+    tbody.appendChild(tr);
+  });
+
+  resultList.appendChild(table);
+  resultList.classList.remove('hidden');
+}
+
+
+window.onload = function () {
+      document.getElementById('finalBtn').addEventListener('click', () => {
+        const { jsPDF } = window.jspdf;
+        const doc = new jsPDF('p', 'pt', 'a4'); // Crea un documento PDF tamaño A4
+
+        html2canvas(document.getElementById('bgcontenedor1'), {
+          scale: 1, // Escala el contenido a 1
+          windowWidth: document.getElementById('bgcontenedor1').scrollWidth,
+          windowHeight: document.getElementById('bgcontenedor1').scrollHeight,
+        }).then(canvas => {
+          const imgData = canvas.toDataURL('image/png', 1.0); // Convierte el canvas a una imagen PNG
+          const imgWidth = doc.internal.pageSize.getWidth();
+          const imgHeight = (canvas.height * imgWidth) / canvas.width;
+
+          doc.addImage(imgData, 'PNG', 0, 0, imgWidth, imgHeight);
+          doc.save('Resultados_01.pdf'); // Descarga el archivo PDF
+          window.location.href = 'contenido3.html';
         });
-      }
-
-      window.onload = function () {
-        document.getElementById('finalBtn').addEventListener('click', () => {
-          const { jsPDF } = window.jspdf;
-          const doc = new jsPDF();
-
-          html2canvas(document.getElementById('bgcontenedor1')).then(canvas => {
-            const imgData = canvas.toDataURL('image/png');
-            doc.addImage(imgData, 'PNG', 0, 0);
-            doc.save('Resultados.pdf');
-            window.location.href = "contenido3.html";
-          });
-        });
-      }
-
+      });
+    };
     </script>
 
 <script>

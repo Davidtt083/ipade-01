@@ -7,8 +7,8 @@
 }
 
 .very-specific-design {
-  width: 1000px;
-  height: 646px;
+  width: 1367px;
+  height: 704px;
   padding: 50px;
   text-align: center;
   background: rgb(255, 255, 255);
@@ -96,7 +96,7 @@ body {
 .bgcontenedor1 {
   background-size: cover;
   /* Ajusta la imagen para cubrir todo el div */
-  background-position: center;
+  background-position-y: -1px;
   /* Centra la imagen */
   background-repeat: no-repeat;
   /* Evita que la imagen se repita */
@@ -787,7 +787,7 @@ body {
 }
 
 .stars span.selected {
-  color: gold;
+  color: #bc955c;
 }
 
 #feedbackList {
@@ -834,6 +834,8 @@ body {
 
 .titulo {
   color: #002d74;
+  margin-top: -13px;
+  margin-bottom: 18px;
 }
 
 .responder {
@@ -919,7 +921,105 @@ body {
   /* Mantiene la proporción de aspecto */
 }
 
-.texto_imagen{
+.texto_imagen {
   color: #ffffff;
   font-size: 20px;
+}
+
+.siguiente {
+  position: absolute;
+  margin-top: -208px;
+  margin-left: 1083px;
+  cursor: pointer;
+  color: #f1e4b2;
+  font-weight: bolder;
+  font-size: 74px;
+  transition: all 0.5s;
+}
+
+.siguiente:hover {
+  color: #002d74;
+}
+
+
+.siguientebtn {
+  position: absolute;
+  margin-top: -30px;
+  margin-left: 728px;
+  cursor: pointer;
+  color: #f1e4b2;
+  font-weight: bolder;
+  font-size: 74px;
+  background-color: transparent;
+  border: none;
+  transition: all 0.5s;
+}
+
+.siguientebtn:hover {
+  color: #002d74;
+}
+
+.descargar {
+  position: absolute;
+  margin-top: 104px;
+  margin-left: 603px;
+  cursor: pointer;
+  background-color: #002d74;
+  font-weight: bolder;
+  font-size: 16px;
+  transition: all 0.5s;
+  color: white;
+  padding: 8px;
+}
+
+.letras_blancas{
+  color: white;
+}
+
+.subtitulo{
+  color: white;
+  background: #bc955c;
+  border-radius: 10px;
+  position: absolute;
+  margin-top: -57px;
+  padding: 5px;
+  font-size: 20px;
+  margin-bottom: 47px;
+}
+
+table {
+  width: 100%;
+  max-height: 200px;
+  font-size: 15px;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  text-align: center;
+  padding: 1px;
+}
+
+th {
+  background-color: #002d74;
+  color: rgb(255, 255, 255);
+}
+
+th:nth-child(1),
+td:nth-child(1) {
+  width: 50px;
+  /* Establece un ancho de 50 píxeles para la tercera columna */
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+  width: 50px;
+  /* Establece un ancho de 50 píxeles para la tercera columna */
+}
+
+th:nth-child(3),
+td:nth-child(3) {
+  width: 294px;
+  /* Establece un ancho de 50 píxeles para la tercera columna */
 }
