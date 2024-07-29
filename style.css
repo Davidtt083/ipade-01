@@ -972,6 +972,15 @@ body {
   padding: 8px;
 }
 
+.instruccion {
+  position: absolute;
+  margin-top: 73px;
+  margin-left: 411px;
+  cursor: pointer;
+  font-size: 16px;
+  color: white;
+}
+
 .letras_blancas {
   color: white;
 }
