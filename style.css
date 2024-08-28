@@ -961,8 +961,8 @@ body {
 
 .descargar {
   position: absolute;
-  margin-top: 104px;
-  margin-left: 603px;
+  margin-top: -253px;
+  margin-left: 937px;
   cursor: pointer;
   background-color: #002d74;
   font-weight: bolder;
@@ -975,9 +975,9 @@ body {
 .instruccion {
   position: absolute;
   margin-top: 73px;
-  margin-left: 411px;
+  margin-left: 322px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 24px;
   color: white;
 }
 
